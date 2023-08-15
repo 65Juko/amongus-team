@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>AMONG US</title>
+		<link rel="stylesheet" href="styles.css" />
+		<link
+			rel="stylesheet"
+			href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css"
+		/>
+		<link
+			rel="apple-touch-icon"
+			sizes="180x180"
+			href="/apple-touch-icon.png"
+		/>
+		<link
+			rel="icon"
+			type="image/png"
+			sizes="32x32"
+			href="/favicon-32x32.png"
+		/>
+		<link
+			rel="icon"
+			type="image/png"
+			sizes="16x16"
+			href="/favicon-16x16.png"
+		/>
+		<link rel="manifest" href="/site.webmanifest" />
+		<script defer>
+			function onClick(id) {
+				window.open(`https://steamcommunity.com${id}`, "_blank");
+				console.log("ahhhh");
+			}
+		</script>
+	</head>
+	<body>
+		<div class="main-container">
+			<div class="header">
+				<h1>AMONG US (SUS)</h1>
+			</div>
+
+			<div
+				onclick="onClick('/profiles/76561198873491124')"
+				class="card-container"
+			>
+				<div class="player-card">
+					<img src="blue_amonki.png" alt="Player 1" />
+					<h2>Florian "Blue"</h2>
+					<p>Bleistifter</p>
+					<div class="overlay">Bald Gold 1 in Wingman</div>
+				</div>
+				<div onclick="onClick('/id/65Juko')" class="player-card">
+					<img src="orange_amonki.png" alt="Player 2" />
+					<h2>Julian "Orange"</h2>
+					<p>Fluglotse</p>
+					<div class="overlay">
+						"Capsule Sale ist nur einmal im Jahr"
+					</div>
+				</div>
+				<div onclick="onClick('/id/65fletch')" class="player-card">
+					<img src="yellow_amonki.png" alt="Player 3" />
+					<h2>Hanno "Yellow"</h2>
+					<p>Bundi</p>
+					<div class="overlay">"Sex mit Orkas"</div>
+				</div>
+				<div onclick="onClick('/id/65Macr0')" class="player-card">
+					<img src="green_amonki.png" alt="Player 4" />
+					<h2>Vincent "Green"</h2>
+					<p>Sozialschmarotzer</p>
+					<div class="overlay">
+						"Ein Europäer ist so viel wert wie 10 Chinesen"
+					</div>
+				</div>
+				<div onclick="onClick('/id/Slitix')" class="player-card">
+					<img src="purple_amonki.png" alt="Player 5" />
+					<h2>Kian "Purple"</h2>
+					<p>FISI</p>
+					<div class="overlay">
+						"wie löse ich mein Alkohol problem Herr Hase ?"
+					</div>
+				</div>
+			</div>
+		</div>
+	</body>
+</html>
